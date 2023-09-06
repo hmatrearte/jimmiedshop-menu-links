@@ -22,7 +22,7 @@ header{
 
 body{
     max-width: 100%;
-    background-image: url("./assets/img/IMG_20210808_163400.jpg");
+    background-image: url("./assets/img/IMG_20210808_163400.webp");
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(10px) ;
@@ -91,14 +91,23 @@ body{
 .logo{
     display: flex;
     max-width: 90px;
-    /* transition: 0.5s;
+    -o-transition: transform 0.8s;
+    /*transition: 0.5s;
     /*flex-wrap: wrap;
     */
+    -webkit-transition: transform 0.8s;
+    -moz-transition: transform 0.8s;
+    -ms-transition: transform 0.8s;
+    transition: transform 0.8s;
 }
 
-/* .logo:hover{
-    rotate:360deg;
-} */
+.logo:hover{
+    -o-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
 
 /* ------------------LINKS---------------------- */
 
@@ -161,22 +170,27 @@ body{
 
 .boton:hover{
     scale: 1.1;
+    font-weight: 750;
 }
 
 .cat:hover{
     border: solid yellow 1.5px;
+    color: yellow;
 }
 
 .face:hover{
     border: solid rgb(35, 75, 250) 1.5px;
+    color: rgb(35, 110, 250);
 }
 
 .ig:hover{
     border: solid purple 1.5px;
+    color: rgb(206, 28, 206);
 }
 
 .spoti:hover{
     border: solid lime 1.5px;
+    color: lime;
 }
 
 /* -----------FOOTER -------- */
@@ -194,11 +208,13 @@ footer{
 
 .footer-text{
     display: flex;
+    flex-direction: column;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--text);
     text-shadow: var(--color-top) -3px 3px 8px;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 200;
+    gap: 10px;
 }
 
 .footer-text span{
