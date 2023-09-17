@@ -2,10 +2,10 @@
 
 body{
     background: none;
-    background-color: rgb(195, 204, 213);
+    background-color: whitesmoke;
 }
 .navbar{
-    box-shadow: black -3px 7px 8px;
+    box-shadow: black -3px 5px 8px;
 }
 
 .intro-container p{
@@ -24,11 +24,11 @@ body{
 
 .logo{
     border: solid 2px white;
-    border-radius: 10px;
+    -o-border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .text{
