@@ -28,6 +28,7 @@ body {
     background-repeat: no-repeat;
     backdrop-filter: blur(10px);
     height: 1300px;
+    scroll-behavior: smooth;
 }
 
 .navbar {
